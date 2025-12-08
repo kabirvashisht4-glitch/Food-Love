@@ -5,16 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Love - Fresh Food Delivered</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+  </style>
+
 </head>
 <body>
     <header class="header">
-        <div class="logo">Food Love</div>
+        <a href="index.html" style="text-decoration: none;">
+            <div class="logo">Food Love</div>
+        </a>
         <nav class="nav">
+            <button id="btn">Dark Mode</button>
+            <script>
+                    let button = document.getElementById("btn");
+                    button.onclick = function () {
+                        document.body.classList.toggle("dark-mode");
+                    };
+            </script>
             <a href="menu.html">Menu</a>
             <a href="contact.html">Contact</a>
-            <a href="cart.html">Cart</a>
-            <a href="login.html" class="auth-link">Log In</a>
             <a href="signup.html" class="auth-link btn">Sign Up</a>
+
         </nav>
     </header>
 
@@ -54,67 +74,73 @@
             </a>
         </div>
     </section>
-
-    <section class="track-orders-section">
-        <div class="container track-grid">
-            <div class="text-content">
-                <h2 class="track-title">Track orders to your door</h2>
-                <p>Get your favourite food delivered in a flash. You'll see when your rider's picked up your order, and be able to follow them along the way. You'll get a notification when they're nearby, too.</p>
-                <div class="app-buttons">
-                    <div class="app-btn border-dark">
-                        <span class="icon"></span> Download on the <br />
-                        <span class="store-name">App Store</span>
+    <div style="height: 500px; width: 98%; box-shadow: 10px 10px 10px 5px #00CCBC;">
+        <section class="track-orders-section">
+            <div class="container track-grid">
+                <div class="text-content">
+                    <h2 class="track-title">Track orders to your door</h2>
+                    <p>Get your favourite food delivered in a flash. You'll see when your rider's picked up your order, and be able to follow them along the way. You'll get a notification when they're nearby, too.</p>
+                    <div class="app-buttons">
+                        <a href="https://deliveroo.co.uk/app-download?af_web_dp=https%3A%2F%2Fdeliveroo.co.uk%2Fen%2Fapp%3Fdesktop%3D1">
+                            <div class="app-btn border-dark">
+                                <span class="icon"></span> Download on the <br />
+                                <span class="store-name">App Store</span>
+                            </div>
+                        </a>
+                        <a href="https://deliveroo.co.uk/app-download?af_web_dp=https%3A%2F%2Fdeliveroo.co.uk%2Fen%2Fapp%3Fdesktop%3D1">
+                            <div class="app-btn bg-dark">
+                                <span class="icon">▶</span> GET IT ON <br />
+                                <span class="store-name">Google Play</span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="app-btn bg-dark">
-                        <span class="icon">▶</span> GET IT ON <br />
-                        <span class="store-name">Google Play</span>
+                </div>
+
+                <div class="map-graphic">
+                    <div class="mock-path"></div>
+                    <div class="marker pickup"></div>
+                    <div class="marker delivery"></div>
+                    <div class="mock-line"></div>
+                    <div class="notification-popup">
+                        <div class="popup-header">
+                            <span class="brand-text">DELIVEROO</span>
+                            <span class="time-text">NOW</span>
+                        </div>
+                        <p class="popup-message">Your rider's nearby 🎉</p>
+                        <p class="popup-subtext">They're almost there - get ready!</p>
                     </div>
                 </div>
             </div>
-
-            <div class="map-graphic">
-                <div class="mock-path"></div>
-                <div class="marker pickup"></div>
-                <div class="marker delivery"></div>
-                <div class="mock-line"></div>
-                <div class="notification-popup">
-                    <div class="popup-header">
-                        <span class="brand-text">DELIVEROO</span>
-                        <span class="time-text">NOW</span>
-                    </div>
-                    <p class="popup-message">Your rider's nearby 🎉</p>
-                    <p class="popup-subtext">They're almost there - get ready!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <section class="meal-deals-banner">
-        <div class="container banner-content">
+        <div class="container banner-content" style="text-align: center;">
             <h2 class="banner-title">Up to 25% off meal deals</h2>
             <p class="banner-subtext">Need a midweek pick-me-up, a break from cooking for the family or just fancy your favourite restaurant?</p>
             <p class="banner-terms">Subject to availability. Participating restaurants only. Service/delivery fees apply. T&amp;Cs</p>
         </div>
         <div class="mock-icons-strip"></div>
     </section>
-
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-column">
-                <div class="logo">Food Love</div>
-                <p class="project-credit">Capstone Project by "Kabir Vashisht"</p>
-                <p class="copyright-text">&copy; 2025 All rights reserved.</p>
-            </div>
-            <div class="footer-column follow-us-col">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" class="social-icon">F</a>
-                    <a href="#" class="social-icon">I</a>
-                    <a href="#" class="social-icon">T</a>
+    <div>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-column">
+                    <div class="logo">Food Love</div>
+                    <p class="project-credit">Capstone Project by "Kabir Vashisht"</p>
+                    <p class="copyright-text">&copy; 2025 All rights reserved.</p>
                 </div>
-                <p>Eat well, live happy.</p>
+                <div class="footer-column follow-us-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">F</a>
+                        <a href="#" class="social-icon">I</a>
+                        <a href="#" class="social-icon">T</a>
+                    </div>
+                    <p>Eat well, live happy.</p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
+
