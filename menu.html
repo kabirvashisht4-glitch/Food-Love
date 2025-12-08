@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu - Food Love</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+  </style>
 </head>
 <body>
     <header class="header">
         <div class="logo">Food Love</div>
         <nav class="nav">
+            <button id="btn">Dark Mode</button>
+            <script>
+                    let button = document.getElementById("btn");
+                    button.onclick = function () {
+                        document.body.classList.toggle("dark-mode");
+                    };
+            </script>
             <a href="index.html">Home</a>
             <a href="contact.html">Contact</a>
-            <a href="cart.html">Cart</a>
-            <a href="login.html" class="auth-link">Log In</a>
             <a href="signup.html" class="auth-link btn">Sign Up</a>
         </nav>
     </header>
@@ -24,55 +40,73 @@
                 <img class="img" src="images/Veg Burgur.png" alt="Veg Burger" />
                 <h3>Veggie Delight Burger</h3>
                 <p>$8.99</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.zomato.com/mumbai/burger-king-dadar-west/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gVmVnIEJ1cmdlciIsImRpc2hfaWRzIjpbIjEzMjI1Il0sImN1aXNpbmVfaWRzIjpbXX19">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
             <div class="card">
                 <img class="img" src="images/Pizza.png" alt="Margherita Pizza" />
                 <h3>Margherita Pizza</h3>
                 <p>$14.00</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.zomato.com/mumbai/zulus-pizza-fresh-fanatics-wadala/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gTWFyZ2hlcml0YSBQaXp6YSIsImRpc2hfaWRzIjpbIjY1OTUzIl0sImN1aXNpbmVfaWRzIjpbXX19">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
             <div class="card">
                 <img class="img" src="images/Pepperoni Feast Pizza.png" alt="Pepperoni Pizza" />
                 <h3>Pepperoni Feast Pizza</h3>
                 <p>$16.50</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.zomato.com/mumbai/la-pinoz-pizza-matunga-east/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gUGl6emEiLCJkaXNoX2lkcyI6WyI2ODk4NyJdLCJjdWlzaW5lX2lkcyI6W119fQ%3D%3D">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
             <div class="card">
                 <img class="img" src="images/Pasta.png" alt="Creamy Alfredo Pasta" />
                 <h3>Creamy Alfredo Pasta</h3>
                 <p>$13.75</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.zomato.com/mumbai/hola-pasta-fresh-gourmet-pasta-santacruz-east/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gQ3JlYW0gQWxmcmVkbyBQYXN0YSIsImRpc2hfaWRzIjpbIjQ2NzA5Il0sImN1aXNpbmVfaWRzIjpbXX19">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
             <div class="card">
                 <img class="img" src="images/Fresh Tuna Salad.png" alt="Tuna Salad" />
                 <h3>Fresh Tuna Salad</h3>
                 <p>$11.00</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.zomato.com/mumbai/harvest-salad-co-wadala/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gU2FsYWQiLCJkaXNoX2lkcyI6WyIzMjY0MCJdLCJjdWlzaW5lX2lkcyI6W119fQ%3D%3D">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
             <div class="card">
                 <img class="img" src="images/French Fries.png" alt="Crispy French Fries" />
                 <h3>Crispy French Fries</h3>
                 <p>$4.50</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.zomato.com/mumbai/mumbai-bites-sion/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gVmVnIEZyZW5jaCBGcmllcyIsImRpc2hfaWRzIjpbIjM0MTc2Il0sImN1aXNpbmVfaWRzIjpbXX19">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
             <div class="card">
                 <img class="img" src="images/Golden Onion Rings.png" alt="Golden Onion Rings" />
                 <h3>Golden Onion Rings</h3>
                 <p>$5.00</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.snacksonline.co.uk/products/golden-cross-onion-rings-onion-flavour-corn-snacks-150g">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
             <div class="card">
                 <img class="img" src="images/Chocolate Lava Cake.png" alt="Chocolate Lava Cake" />
                 <h3>Chocolate Lava Cake</h3>
                 <p>$7.50</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.zomato.com/mumbai/sweet-county-cake-shop-matunga-east/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gQ2hvY29sYXRlIENha2UiLCJkaXNoX2lkcyI6WyI0MjMzMiJdLCJjdWlzaW5lX2lkcyI6W119fQ%3D%3D">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
             <div class="card">
                 <img class="img" src="images/Vanilla Ice Cream Sundae.png" alt="Vanilla Ice Cream" />
                 <h3>Vanilla Ice Cream Sundae</h3>
                 <p>$6.00</p>
-                <button class="btn btn-add">Add to Cart</button>
+                <a href="https://www.zomato.com/mumbai/gianis-ice-cream-shakes-sundaes-matunga-east/order?contextual_menu_params=eyJkaXNoX3NlYXJjaCI6eyJ0aXRsZSI6IkJlc3QgaW4gSWNlIENyZWFtIiwiZGlzaF9pZHMiOlsiNTg2OTMiXSwiY3Vpc2luZV9pZHMiOltdfX0%3D">
+                    <button class="btn btn-add">Order</button>
+                </a>
             </div>
         </div>
     </section>
